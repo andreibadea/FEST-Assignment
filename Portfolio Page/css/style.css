@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #3C3A4F;
+}
+
+body,
+html {
+  /* height: 100%; */
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+
+.links ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.links ul li a {
+  text-decoration: none;
+  color: #94A1B2;
+  transition: color .30s ease-in-out;
+
+}
+
+.links ul li a:hover {
+  color: #8863FF;
+
+}
+
+p, ul {
+  margin-bottom: 0px;
+}
+
+.navBar {
+  /* position: sticky;
+  opacity: 0.95;
+  top: 0; */
+  width: 100%;
+  background-color: #16161A;
+  box-shadow: 1px 1px 18px #272727;
+  height: 125px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcomeSection {
+  height: 87vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #3C3A4F; */
+  background-color: rgba(170, 170, 170, 0.719);
+
+}
+
+.profileImage img {
+  height: 550px;
+}
+
+.persDesc {
+  position: absolute;
+  top: 300px;
+  left: 250px;
+}
+
+.profileImage {
+  position: absolute;
+  top: 250px;
+  right: 250px;
+  box-shadow: 1px 1px 18px #272727;
+}
+
+.persDesc p {
+  color: #454546;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-left: 25px;
+}
+
+.persDesc h1 {
+  max-width: 550px;
+}
+
+.persDesc p span.hoverEff {
+  transition: color .30s ease-in-out;
+  font-size: 1rem;
+  /* cursor: pointer; */
+}
+
+.persDesc p span {
+  font-size: 1rem;
+}
+
+.persDesc p span.hoverEff:hover {
+  color: #8863FF;
+}
+
+/*  Here is where we create the hover animation  */
+
+.persDesc h1 span {
+  /* position: relative; */
+  color: #8863FF;
+  overflow: hidden;
+  background: linear-gradient(to right,  #d49f5f,  #d49f5f 50%, #8863FF 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease, font-weight 275ms ease;
+}
+
+.persDesc h1 span:hover {
+  font-weight: bold;
+  background-position: 0 100%;
+}
+
+/* Hover animation ended */
+
+.aboutMe {
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.719);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#fp-nav ul li a span {
+  background: #8863FF;
+}
+
+.aboutImage img{
+  position: absolute;
+  bottom: 200px;
+  right: 350px;
+  height: 300px;
+  z-index: 1;
+}
+
+.aboutText {
+  position: absolute;
+  top: 225px;
+  left: 250px;
+  /* z-index: 2; */
+}
+
+.aboutText h1, .skillsText h1 {
+  font-size: 150px;
+  color: #3c3c3f;
+}
+
+.textBox {
+  /* border: 2px solid white; */
+  box-shadow: 1px 1px 18px #3a3a3a;
+  opacity: 0.90;
+  padding: 50px 100px;
+  /* border-radius: 2px; */
+  background-color: #28282c;
+  z-index: 2;
+
+}
+
+.textBox p {
+  max-width: 700px;
+  /* color: #8863FF; */
+}
+
+.skillsText {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.skillsText h1 {
+  color: #3c3c3f;
+}
+
+.skillsSection {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.719);
+  
+}
+
+/* The whole skill bar */
+
+.skillBar {
+  width: 500px;
+  margin: 50px auto 0;
+  padding: 20px;
+}
+
+.skillBar ul li {
+  position: relative;
+  list-style: none;
+  margin: 50px 0;
+  /* font-weight: 50; */
+  text-transform: uppercase;
+}
+
+.skillBar ul li:before {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: #8f353e;
+  border-radius: 1000px;
+}
+
+.skillBar ul li:after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 0;
+  height: 15px;
+  background-color: #EB5565;
+  border-radius: 1000px;
+  animation-duration: .7s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+.skillBar ul li.html:after {
+  animation-name: html;
+}
+
+@keyframes html {
+  to {
+    width: 90%;
+  }
+}
+
+.skillBar ul li.css:after {
+  animation-name: css;
+}
+
+@keyframes css {
+  to {
+    width: 60%;
+  }
+}
+
+.skillBar ul li.js:after {
+  animation-name: js;
+}
+
+@keyframes js {
+  to {
+    width: 85%;
+  }
+}
+
+.skillBar ul li.react:after {
+  animation-name: react;
+}
+
+@keyframes react {
+  to {
+    width: 70%;
+  }
+}
+
+
+/* Skill bar ended */
+
+.skillsArea {
+  margin-top: 250px;
+  box-shadow: 1px 1px 18px #6d6d6d;
+  border-radius: 5px;
+  /* padding: 25px; */
+  background-color: #16161A;
+  z-index: 1;
+  opacity: 0.98;
+}
+
+.skillsArea p {
+  color: rgba(255, 255, 255, 0.719);
+  font-size: 18px;
+  width: 950px;
+  padding: 35px;
+}
+
+.circleImage {
+  position: absolute;
+  bottom: 100px;
+  left: 100px;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.projectsSection {
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.719);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.flexMaybe {
+  max-width: 900px;  
+  /* opacity: .7; */
+  max-height: 900px;
+}
+
+.carousel-caption h5, .carousel-caption p {
+  color:#16161A;
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.fillText {
+  position: absolute;
+  top: 40px;
+  color: #3c3c3f;
+}
+
+.carousel-caption {
+  background-color:  rgba(170, 170, 170, 0.904);
+  border-radius: 10px;
+}
+
+/* background-color: rgba(170, 170, 170, 0.719); */
+
+
+
+/* #EB5565 maybe use it is the color of the dots*/
+  
+/* #8863FF for the pictures i have*/
+
+/* #3C3A4F maybe background*/
+
+/* #6e7885 for parahgraphs*/
+
+/* #16161A maybe background*/
+
+/* #6369E5 login button color*/
+
+
+
+
+
+
+
+
+
+
+
+
+/* Button hover effect */
+
+#button {
+
+  margin-top: 50px;
+  /*Reset*/
+  display: inline-block;
+  outline: none;
+  background-color: transparent;
+
+  /*Some fancy stuff*/
+  padding: 0 20px;
+  line-height: 200%;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+
+  /*Magic*/
+  background-image: linear-gradient(transparent, transparent 50%, #8863FF 50%, #8863FF);
+  background-size: 100% 200%;
+  -webkit-transition: background-position .3s, box-shadow .3s ease-in-out;
+  transition: background-position .3s, box-shadow .3s ease-in-out;
+}
+
+#button:hover {
+  box-shadow: 1px 1px 18px #2727274f;
+  background-position: 0 -100%;
+}
+
+/* Button hover effect ended */
