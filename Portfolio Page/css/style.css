@@ -311,7 +311,7 @@ p, ul {
 
 .projectsSection {
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.719);
+  background-color: rgba(170, 170, 170, 0.719);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -341,6 +341,65 @@ p, ul {
 .carousel-caption {
   background-color:  rgba(170, 170, 170, 0.904);
   border-radius: 10px;
+}
+
+.contactCont{
+  background-color: rgb(22, 22, 26);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* position: relative; */
+}
+
+.contactText {
+  padding-bottom: 3%;
+}
+
+.contactForm {
+  padding: 100px 50px;
+  /* border: 2px solid rgba(255, 255, 255, 0.719); */
+  transition: box-shadow .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.contactForm:hover {
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.719);
+
+}
+
+.contactLinks ul li {
+  margin-top: 50px;
+  list-style: none;
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.contactLinks ul li:last-child{
+  margin-right: 0px;
+}
+
+.contactLinks ul li:first-child{
+  margin-left: 25px;
+}
+
+.contactLinks ul li a {
+  text-decoration: none;
+  color: #94A1B2;
+  transition: color .30s ease-in-out;
+}
+
+.contactLinks ul li a:hover{
+  color: #8863FF;
+}
+
+.logoSpace img {
+  width: 50%;
+}
+
+.logoSpace {
+  text-align: center;
 }
 
 /* background-color: rgba(170, 170, 170, 0.719); */
