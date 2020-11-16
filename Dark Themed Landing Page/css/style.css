@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #3C3A4F;
+}
+
+body,
+html {
+  /* height: 100%; */
+  font-family: "Nunito", sans-serif;
+  color: white;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #16161A;
+  border-radius: 15px;
+  border: 1px solid #16161A;
+  margin-top: 25px;
+  padding: 15px;
+  margin-bottom: 0px;
+  box-shadow: 1px 1px 18px #272727;
+
+}
+
+ul {
+  margin-bottom: 0px;
+}
+
+.firstCont {
+  height: 100vh;
+}
+
+.mainNav li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.linkList a , .followUs ul li a{
+  text-decoration: none;
+  color: #94A1B2;
+}
+
+.loginButton, .aboutButton, .newsLetterButton {
+  border: 0px solid #8863FF;
+  border-radius: 25px;
+  padding: 8px 15px;
+  background-color: #8863FF;
+  color: white;
+  box-shadow: 1px 1px 18px #272727;
+  transition: color .30s ease-in-out,background-color .30s ease-in-out,border-color .30s ease-in-out,box-shadow .30s ease-in-out;
+}
+
+.loginButton:hover, .aboutButton:hover {
+  color: #fff;
+  background-color: #FEBF70;
+  border-color: #FEBF70;
+}
+
+.loginList a {
+  text-decoration: none;
+}
+
+.linkList a, .followUs ul li a {
+  transition: color .30s ease-in-out;
+}
+
+.linkList a:hover, .followUs ul li a:hover {
+  color: #8863FF;
+}
+
+.mainHeader {
+  display: flex;
+  flex-direction: row;
+  margin-top: 200px;
+}
+
+.offersImg {
+  height: 400px;
+}
+
+.logoWithText p {
+  color: #8863FF;
+  font-size: 1rem;
+  padding: 6px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+.logoWithText {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.childIcon {
+  width: 80px;
+}
+
+.text {
+  margin-right: 100px;
+}
+
+.aboutButton {
+  margin-top: 50px;
+}
+
+.iconBox {
+  display: flex;
+  align-items: center;
+  /* max-width: 550px; */
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-bottom: 200px;
+}
+
+.inDivIcon img {
+  height: 100px;
+  margin-bottom: 30px;
+
+}
+
+.inDivIcon {
+  max-width: 250px;
+  margin-right: 50px;
+  text-align: center;
+  border: 2px solid #6e7885;
+  background-color: #6e7885;
+  border-radius: 5px;
+  /* padding: 50px; */
+  padding: 40px 15px;
+  color: #fff;
+  box-shadow: 1px 1px 18px #272727;
+  transition: box-shadow .30s ease-in-out;
+}
+
+.inDivIcon p {
+  overflow: auto;
+  text-overflow: ellipsis;
+  max-height: 160px;
+}
+
+.inDivIcon p::-webkit-scrollbar {
+  scrollbar-width: none;
+
+}
+
+.inDivIcon:hover {
+  box-shadow: 1px 1px 18px #6369E5;
+  /* background-color: #c79456; */
+}
+
+
+.flexProp {
+  display: flex;
+  /* flex-wrap: wrap; */
+
+}
+
+.firstFour {
+  /* margin-top: 150px; */
+  margin-bottom: 50px;
+}
+
+.lastIcon{
+  margin-right: 0px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.companiesCont h1 {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.progressCont {
+  display: flex;
+  margin-bottom: 150px    ;
+  margin-top: 150px;
+
+}
+
+.progressImage img {
+  height: 400px;
+}
+
+.progressText p {
+  color: #94A1B2;
+  padding: 25px;
+}
+
+.progressText {
+  margin-top: 50px;
+  margin-left: 25px;
+}
+
+.companiesCont, .wholePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.jobsCont {
+  display: flex;
+  margin-bottom: 150px;
+}
+
+.jobBox {
+  /* border: 2px solid black; */
+  border-radius: 5px;
+  margin-right: 100px;
+  text-align: center;
+  padding: 35px;
+  transition: box-shadow .30s ease-in-out;
+}
+
+.jobBox:hover {
+  box-shadow: 1px 1px 18px #272727;
+
+}
+
+.jobBox p {
+  margin-top: 15px; 
+  border-top: 2px solid #6e7885;
+  padding-top: 40px;
+}
+
+.jobBox:last-child {
+  margin-right: 0px;
+}
+
+ion-icon {
+  font-size: 75px;
+}
+
+footer {
+  background-color: #272727;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footerCont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.followUs ul li {
+  list-style: none;
+}
+
+.followUs ul li a{
+  text-decoration: none;
+}
+
+.followUs ul li ion-icon {
+  font-size: 15px;
+  margin-right: 3px;
+}
+
+.moreParag {
+  color: #6e7885;
+}
+
+.newsLetterButton {
+  box-shadow: 0px;
+  padding: 2px;
+  border-radius: 0px .25rem .25rem 0px;
+}
+
+/* #8863FF for the pictures i have*/
+
+/* #3C3A4F maybe background*/
+
+/* #16161A maybe background*/
+
+/* #6369E5 login button color*/

@@ -123,3 +123,21 @@ signOut=()=>{
         // An error happened.
       });
 }
+
+document.getElementById('signInOrUp').addEventListener('click', signInOrUp);
+
+function signInOrUp(){ 
+  if(this.innerHTML == 'Sign Up') {
+    this.innerHTML = 'Sign In';
+    document.getElementById('accountCreate').innerHTML = "Create Account";
+    document.getElementById('mainButton').innerHTML = "Sign Up";
+    document.getElementById('mainButton').setAttribute('onclick','signUp()');
+
+  } else {
+    this.innerHTML = 'Sign Up';
+    document.getElementById('accountCreate').innerHTML = "Login To Your Account";
+    document.getElementById('mainButton').innerHTML = "Sign In";
+    document.getElementById('mainButton').setAttribute('onclick','signIn()');
+  }
+  
+ }
