@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #3C3A4F;
+  background-color: #3c3a4f;
 }
 
 body,
@@ -29,21 +29,20 @@ html {
 
 .links ul li a {
   text-decoration: none;
-  color: #94A1B2;
-  transition: color .30s ease-in-out;
-
+  color: #94a1b2;
+  transition: color 0.3s ease-in-out;
 }
 
 .links ul li a:hover {
-  color: #8863FF;
-
+  color: #8863ff;
 }
 
 .links ul {
   font-size: 0.8rem;
 }
 
-p, ul {
+p,
+ul {
   margin-bottom: 0px;
 }
 
@@ -52,7 +51,7 @@ p, ul {
   opacity: 0.95;
   top: 0; */
   width: 100%;
-  background-color: #16161A;
+  background-color: #16161a;
   box-shadow: 1px 1px 18px #272727;
   height: 125px;
   display: flex;
@@ -68,11 +67,10 @@ p, ul {
   align-items: center;
   /* background-color: #3C3A4F; */
   background-color: rgba(170, 170, 170, 0.719);
-
 }
 
 .profileImage img {
-  height: 100%
+  height: 100%;
 }
 
 .persDesc {
@@ -102,7 +100,7 @@ p, ul {
 }
 
 .persDesc p span.hoverEff {
-  transition: color .30s ease-in-out;
+  transition: color 0.3s ease-in-out;
   font-size: 1rem;
   /* cursor: pointer; */
 }
@@ -112,16 +110,16 @@ p, ul {
 }
 
 .persDesc p span.hoverEff:hover {
-  color: #8863FF;
+  color: #8863ff;
 }
 
 /*  Here is where we create the hover animation  */
 
 .persDesc h1 span {
   /* position: relative; */
-  color: #8863FF;
+  color: #8863ff;
   overflow: hidden;
-  background: linear-gradient(to right,  #d49f5f,  #d49f5f 50%, #8863FF 50%);
+  background: linear-gradient(to right, #d49f5f, #d49f5f 50%, #8863ff 50%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -147,10 +145,10 @@ p, ul {
 }
 
 #fp-nav ul li a span {
-  background: #8863FF;
+  background: #8863ff;
 }
 
-.aboutImage img{
+.aboutImage img {
   position: absolute;
   bottom: 20%;
   right: 5%;
@@ -164,7 +162,8 @@ p, ul {
   left: 10%;
 }
 
-.aboutText h1, .skillsText h1 {
+.aboutText h1,
+.skillsText h1 {
   font-size: 5rem;
   color: #3c3c3f;
 }
@@ -172,7 +171,7 @@ p, ul {
 .textBox {
   /* border: 2px solid white; */
   box-shadow: 1px 1px 18px #3a3a3a;
-  opacity: 0.90;
+  opacity: 0.9;
   padding: 50px 100px;
   /* border-radius: 2px; */
   width: 70%;
@@ -181,7 +180,6 @@ p, ul {
   height: 35%;
   background-color: #28282c;
   z-index: 2;
-
 }
 
 .textBox p {
@@ -206,7 +204,6 @@ p, ul {
   align-items: center;
   position: relative;
   background-color: rgba(255, 255, 255, 0.719);
-  
 }
 
 /* The whole skill bar */
@@ -243,9 +240,9 @@ p, ul {
   left: 0;
   width: 0;
   height: 15px;
-  background-color: #EB5565;
+  background-color: #eb5565;
   border-radius: 1000px;
-  animation-duration: .7s;
+  animation-duration: 0.7s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
 }
@@ -290,7 +287,6 @@ p, ul {
   }
 }
 
-
 /* Skill bar ended */
 
 .skillsArea {
@@ -298,7 +294,7 @@ p, ul {
   box-shadow: 1px 1px 18px #6d6d6d;
   border-radius: 5px;
   /* padding: 25px; */
-  background-color: #16161A;
+  background-color: #16161a;
   z-index: 1;
   opacity: 0.98;
   height: 50%;
@@ -332,13 +328,14 @@ p, ul {
 }
 
 .flexMaybe {
-  max-width: 900px;  
+  max-width: 900px;
   /* opacity: .7; */
   max-height: 900px;
 }
 
-.carousel-caption h5, .carousel-caption p {
-  color:#16161A;
+.carousel-caption h5,
+.carousel-caption p {
+  color: #16161a;
   font-weight: bold;
   font-size: 17px;
   margin-bottom: 10px;
@@ -351,11 +348,11 @@ p, ul {
 }
 
 .carousel-caption {
-  background-color:  rgba(170, 170, 170, 0.904);
+  background-color: rgba(170, 170, 170, 0.904);
   border-radius: 10px;
 }
 
-.contactCont{
+.contactCont {
   background-color: rgb(22, 22, 26);
   height: 100vh;
   display: flex;
@@ -372,13 +369,12 @@ p, ul {
 .contactForm {
   padding: 100px 50px;
   /* border: 2px solid rgba(255, 255, 255, 0.719); */
-  transition: box-shadow .3s ease-in-out;
+  transition: box-shadow 0.3s ease-in-out;
   border-radius: 10px;
 }
 
 .contactForm:hover {
   box-shadow: none;
-
 }
 
 .contactLinks ul li {
@@ -388,22 +384,22 @@ p, ul {
   margin-right: 25px;
 }
 
-.contactLinks ul li:last-child{
+.contactLinks ul li:last-child {
   margin-right: 0px;
 }
 
-.contactLinks ul li:first-child{
+.contactLinks ul li:first-child {
   margin-left: 25px;
 }
 
 .contactLinks ul li a {
   text-decoration: none;
-  color: #94A1B2;
-  transition: color .30s ease-in-out;
+  color: #94a1b2;
+  transition: color 0.3s ease-in-out;
 }
 
-.contactLinks ul li a:hover{
-  color: #8863FF;
+.contactLinks ul li a:hover {
+  color: #8863ff;
 }
 
 .logoSpace img {
@@ -415,11 +411,9 @@ p, ul {
   margin-left: 2%;
 }
 
-
 /* Button hover effect */
 
 #button {
-
   margin-top: 15px;
   /*Reset*/
   display: inline-block;
@@ -434,10 +428,15 @@ p, ul {
   color: white;
 
   /*Magic*/
-  background-image: linear-gradient(transparent, transparent 50%, #8863FF 50%, #8863FF);
+  background-image: linear-gradient(
+    transparent,
+    transparent 50%,
+    #8863ff 50%,
+    #8863ff
+  );
   background-size: 100% 200%;
-  -webkit-transition: background-position .3s, box-shadow .3s ease-in-out;
-  transition: background-position .3s, box-shadow .3s ease-in-out;
+  -webkit-transition: background-position 0.3s, box-shadow 0.3s ease-in-out;
+  transition: background-position 0.3s, box-shadow 0.3s ease-in-out;
 }
 
 #button:hover {
@@ -451,8 +450,7 @@ p, ul {
   display: none;
 }
 
-
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
   .profileImage {
     position: absolute;
     top: 25%;
@@ -469,9 +467,7 @@ p, ul {
   #button {
     margin-top: 50px;
   }
-  
 }
-
 
 @media (min-width: 992px) {
   .skillsArea {
@@ -484,28 +480,27 @@ p, ul {
     right: 15%;
     height: 35%;
     z-index: 1;
+  }
+  .aboutText h1 {
+    font-size: 9rem;
+  }
+  .textBox {
+    /* border: 2px solid white; */
+    box-shadow: 1px 1px 18px #3a3a3a;
+    opacity: 0.9;
+    padding: 50px 100px;
+    /* border-radius: 2px; */
+    overflow: auto;
+    text-overflow: initial;
+    width: 50%;
+    height: 35%;
+    background-color: #28282c;
+    z-index: 2;
+  }
+  .contactForm:hover {
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.719);
+  }
 }
-.aboutText h1 {
-  font-size: 9rem;
-}
-.textBox {
-  /* border: 2px solid white; */
-  box-shadow: 1px 1px 18px #3a3a3a;
-  opacity: 0.90;
-  padding: 50px 100px;
-  /* border-radius: 2px; */
-  overflow: visible;
-  text-overflow: initial;
-  width: 50%;
-  height: 35%;
-  background-color: #28282c;
-  z-index: 2;
-}
-.contactForm:hover {
-  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.719);
-}
-}
-
 
 @media (min-width: 768px) {
   /* .profileImage {
@@ -518,10 +513,7 @@ p, ul {
   .skillsText h1 {
     font-size: 9rem;
   }
-  
 }
 
 @media (min-width: 576px) {
-  
 }
-  
