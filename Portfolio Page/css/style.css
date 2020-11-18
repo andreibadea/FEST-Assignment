@@ -39,6 +39,10 @@ html {
 
 }
 
+.links ul {
+  font-size: 0.8rem;
+}
+
 p, ul {
   margin-bottom: 0px;
 }
@@ -68,19 +72,20 @@ p, ul {
 }
 
 .profileImage img {
-  height: 550px;
+  height: 100%
 }
 
 .persDesc {
   position: absolute;
-  top: 300px;
-  left: 250px;
+  top: 20%;
+  left: 10%;
 }
 
 .profileImage {
   position: absolute;
-  top: 250px;
-  right: 250px;
+  top: 55%;
+  right: 25%;
+  height: 45%;
   box-shadow: 1px 1px 18px #272727;
 }
 
@@ -93,6 +98,7 @@ p, ul {
 
 .persDesc h1 {
   max-width: 550px;
+  font-size: 2rem;
 }
 
 .persDesc p span.hoverEff {
@@ -146,21 +152,20 @@ p, ul {
 
 .aboutImage img{
   position: absolute;
-  bottom: 200px;
-  right: 350px;
-  height: 300px;
+  bottom: 20%;
+  right: 5%;
+  height: 25%;
   z-index: 1;
 }
 
 .aboutText {
   position: absolute;
-  top: 225px;
-  left: 250px;
-  /* z-index: 2; */
+  top: 20%;
+  left: 10%;
 }
 
 .aboutText h1, .skillsText h1 {
-  font-size: 150px;
+  font-size: 5rem;
   color: #3c3c3f;
 }
 
@@ -170,6 +175,10 @@ p, ul {
   opacity: 0.90;
   padding: 50px 100px;
   /* border-radius: 2px; */
+  width: 70%;
+  overflow: auto;
+  text-overflow: ellipsis;
+  height: 35%;
   background-color: #28282c;
   z-index: 2;
 
@@ -203,8 +212,8 @@ p, ul {
 /* The whole skill bar */
 
 .skillBar {
-  width: 500px;
-  margin: 50px auto 0;
+  width: 50%;
+  margin: 0px auto 0;
   padding: 20px;
 }
 
@@ -292,12 +301,15 @@ p, ul {
   background-color: #16161A;
   z-index: 1;
   opacity: 0.98;
+  height: 50%;
+  width: 80%;
+  overflow: auto;
 }
 
 .skillsArea p {
   color: rgba(255, 255, 255, 0.719);
   font-size: 18px;
-  width: 950px;
+  width: 100%;
   padding: 35px;
 }
 
@@ -365,7 +377,7 @@ p, ul {
 }
 
 .contactForm:hover {
-  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.719);
+  box-shadow: none;
 
 }
 
@@ -400,40 +412,15 @@ p, ul {
 
 .logoSpace {
   text-align: center;
+  margin-left: 2%;
 }
-
-/* background-color: rgba(170, 170, 170, 0.719); */
-
-
-
-/* #EB5565 maybe use it is the color of the dots*/
-  
-/* #8863FF for the pictures i have*/
-
-/* #3C3A4F maybe background*/
-
-/* #6e7885 for parahgraphs*/
-
-/* #16161A maybe background*/
-
-/* #6369E5 login button color*/
-
-
-
-
-
-
-
-
-
-
 
 
 /* Button hover effect */
 
 #button {
 
-  margin-top: 50px;
+  margin-top: 15px;
   /*Reset*/
   display: inline-block;
   outline: none;
@@ -459,3 +446,82 @@ p, ul {
 }
 
 /* Button hover effect ended */
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media (min-width: 1200px){
+  .profileImage {
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    height: 75%;
+    box-shadow: 1px 1px 18px #272727;
+  }
+  .persDesc h1 {
+    font-size: 2.5rem;
+  }
+  .links ul {
+    font-size: 1rem;
+  }
+  #button {
+    margin-top: 50px;
+  }
+  
+}
+
+
+@media (min-width: 992px) {
+  .skillsArea {
+    height: 70%;
+    width: 50%;
+  }
+  .aboutImage img {
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    height: 35%;
+    z-index: 1;
+}
+.aboutText h1 {
+  font-size: 9rem;
+}
+.textBox {
+  /* border: 2px solid white; */
+  box-shadow: 1px 1px 18px #3a3a3a;
+  opacity: 0.90;
+  padding: 50px 100px;
+  /* border-radius: 2px; */
+  overflow: visible;
+  text-overflow: initial;
+  width: 50%;
+  height: 35%;
+  background-color: #28282c;
+  z-index: 2;
+}
+.contactForm:hover {
+  box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.719);
+}
+}
+
+
+@media (min-width: 768px) {
+  /* .profileImage {
+    position: absolute;
+    top: 45%;
+    right: 15%;
+    height: 55%;
+    box-shadow: 1px 1px 18px #272727;
+  } */
+  .skillsText h1 {
+    font-size: 9rem;
+  }
+  
+}
+
+@media (min-width: 576px) {
+  
+}
+  

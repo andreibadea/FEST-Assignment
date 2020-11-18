@@ -29,7 +29,7 @@
         <div class="navBar">
           <div class="logoSpace">
             <img src="img/child-looking-by-binoculars.svg" alt="" class="logo">
-            <p>Fraunhofer</p>
+            <p>Fraunhofer Project Center</p>
           </div>
           <div class="links">
             <ul>
@@ -43,7 +43,13 @@
                 <a href="#projectsPage">Projects</a>
               </li>
               <li>
-                <a href="">Contact Me</a>
+                <a href="#contactPage">Contact Me</a>
+              </li>
+              <li>
+                <a href="/Job Platform Page/index.html">Go To Job Platform</a>
+              </li>
+              <li>
+                <a href="#" onclick="signOut()" class="signOut">Sign Out</a>
               </li>
             </ul>
           </div>
@@ -232,8 +238,8 @@
     
 
 
-    <!-- <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script> -->
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.2/firebase-auth.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -254,15 +260,14 @@
     <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.js"></script>
 
-    <!-- <script src="js/firebase.js"></script> -->
+    <script src="/FireBase JavaScript/firebase.js"></script>
     <script>
       
     new fullpage('#fullpage', {
       autoScrolling:true,
       navigation: true,
-      anchors:['homePage', 'aboutMePage', 'skillsPage', 'projectsPage'],
+      anchors:['homePage', 'aboutMePage', 'skillsPage', 'projectsPage', 'contactPage'],
       navigationTooltips: ['Home', 'About Me', 'Skills', 'Projects', 'Contact Me'],
-      // sectionsColor : ['#ccc', '#fff'],
       showActiveTooltip: true
     });
 

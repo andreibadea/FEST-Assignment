@@ -6,19 +6,14 @@ googleSignIn=()=>{
     var provider = new firebase.auth.GoogleAuthProvider();
     firebase.auth().signInWithPopup(provider).then(function(result) {
 
-
-        // If it works redirect to the next page!!
-
-
+      window.location.replace("/Portfolio Page/index.html");
 
       }).catch(function(error) {
         // Handle Errors here.
-
-
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        console.log(errorCode);
-        console.log(errorMessage);
+        // var errorCode = error.code;
+        // var errorMessage = error.message;
+        // console.log(errorCode);
+        // console.log(errorMessage);
       });
 }
 
@@ -30,6 +25,7 @@ twitterSignIn=()=>{
 
 
         // If it works redirect to the next page!!
+        window.location.replace("/Portfolio Page/index.html");
 
 
 
@@ -37,10 +33,10 @@ twitterSignIn=()=>{
         // Handle Errors here.
 
 
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        console.log(errorCode);
-        console.log(errorMessage);
+        // var errorCode = error.code;
+        // var errorMessage = error.message;
+        // console.log(errorCode);
+        // console.log(errorMessage);
       });
 }
 
@@ -50,7 +46,8 @@ facebookSignIn=()=>{
     firebase.auth().signInWithPopup(provider).then(function(result) {
 
 
-        // If it works redirect to the next page!!
+      window.location.replace("/Portfolio Page/index.html");
+      // If it works redirect to the next page!!
 
 
 
@@ -58,10 +55,10 @@ facebookSignIn=()=>{
         // Handle Errors here.
 
 
-        var errorCode = error.code;
-        var errorMessage = error.message;
-        console.log(errorCode);
-        console.log(errorMessage);
+        // var errorCode = error.code;
+        // var errorMessage = error.message;
+        // console.log(errorCode);
+        // console.log(errorMessage);
       });
 }
 
@@ -75,16 +72,18 @@ signUp=()=>{
         document.getElementById('alert').style.display = "initial";
     } else {
         document.getElementById('alert').style.display = "none";
-        firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-            
+        firebase.auth().createUserWithEmailAndPassword(email, password)
+          .then((user) => {
+            window.location.replace("/Portfolio Page/index.html");
+          })
+          .catch((error) => {
             document.getElementById('alert').style.display = "initial";
 
-            var errorCode = error.code;
-            var errorMessage = error.message;
-
-            console.log(errorCode);
-            console.log(errorMessage);
-            });
+            // var errorCode = error.code;
+            // var errorMessage = error.message;
+            // // ..
+          });
+            
     }
     
 
@@ -100,20 +99,34 @@ signIn=()=>{
     } else {
         document.getElementById('alert').style.display = "none";
 
-        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
-            
+        firebase.auth().signInWithEmailAndPassword(email, password)
+          .then((user) => {
+            window.location.replace("/Portfolio Page/index.html");
+          })
+          .catch((error) => {
             document.getElementById('alert').style.display = "initial";
-
-            var errorCode = error.code;
-            var errorMessage = error.message;
-
-            console.log(errorCode);
-            console.log(errorMessage);
+            // var errorCode = error.code;
+            // var errorMessage = error.message;
           });
     }
 
     
 }
+
+var mainApp = {};
+
+(function() {
+  var uid = null;
+  firebase.auth().onAuthStateChanged(function(user) {
+    if (user) {
+      uid = user.uid;
+      // console.log(uid);
+    } else {
+      uid = null;
+      window.location.replace("/Dark Themed Landing Page/index.html");
+    }
+  });
+})()
 
 
 signOut=()=>{

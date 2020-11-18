@@ -32,6 +32,7 @@ html {
 }
 
 .welcomeText {
+  display: none;
   flex-grow: 0;
   height: 100%;
   background-image: linear-gradient(to left, #8863FF 0%,#FEBF70  100%);
@@ -111,7 +112,8 @@ body {
 
 .createArea {
   margin-bottom: 150px;
-  font-size: 3rem;
+  /* font-size: 3rem; */
+  font-size: 2.5rem;
   color: #DE5246;
   font-weight: bold;
 }
@@ -158,7 +160,7 @@ body {
 }
 
 .logo {
-  height: 50px;
+  height: 45px;
   border: 2px solid lightgray;
   border-radius: 50%;
   padding: 5px;
@@ -174,7 +176,7 @@ body {
   justify-content: space-around;
 }
 
-.signUpBtn {
+.signUpBtn, .rightSignButton {
   border-color: #0062cc;
   color: #0062cc;
   background-color: transparent;
@@ -185,10 +187,34 @@ body {
 
 }
 
+.rightSignButton {
+  margin-top: 15px;
+}
+
 .alert {
   width: 170px;
   margin-bottom: 40px;
   display: none;
   position: absolute;
   text-align: center;
+}
+
+/* Media Queries */
+
+@media (min-width: 992px) {
+  .createArea {
+  font-size: 3rem;
+  }
+  .logo {
+    height: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  .welcomeText {
+    display: initial;
+ }
+ .rightSignButton {
+  display: none;
+}
 }

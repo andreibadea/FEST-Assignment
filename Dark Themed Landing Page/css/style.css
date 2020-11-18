@@ -47,6 +47,7 @@ ul {
   list-style: none;
   display: inline-block;
   padding: 10px;
+  font-size: 0.8rem;
 }
 
 .linkList a , .followUs ul li a{
@@ -88,13 +89,17 @@ ul {
   margin-top: 200px;
 }
 
+.mainHeader img {
+  width: 50%;
+}
+
 .offersImg {
   height: 400px;
 }
 
 .logoWithText p {
   color: #8863FF;
-  font-size: 1rem;
+  font-size: 0.6rem;
   padding: 6px;
   font-weight: bold;
   margin-bottom: 0px;
@@ -108,15 +113,27 @@ ul {
 }
 
 .childIcon {
-  width: 80px;
+  width: 45%;
 }
 
 .text {
-  margin-right: 100px;
+  margin-right: 10%;
+}
+
+.text p {
+  font-size: 1rem;
+  overflow: auto;
+  text-overflow: ellipsis;
+  height: 25%;
+}
+
+.text h2 {
+  font-size: 1.5rem;
+  
 }
 
 .aboutButton {
-  margin-top: 50px;
+  margin-top: 5%;
 }
 
 .iconBox {
@@ -135,7 +152,8 @@ ul {
 }
 
 .inDivIcon {
-  max-width: 250px;
+  max-width: 225px;
+  margin-top: 50px;
   margin-right: 50px;
   text-align: center;
   border: 2px solid #6e7885;
@@ -167,7 +185,9 @@ ul {
 
 .flexProp {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -176,33 +196,38 @@ ul {
   margin-bottom: 50px;
 }
 
-.lastIcon{
+/* .lastIcon{
   margin-right: 0px;
-}
+} */
 
 ::-webkit-scrollbar {
     display: none;
 }
 
 .companiesCont h1 {
-  margin-bottom: 100px;
+  margin-bottom: 9%;
   text-align: center;
+  font-size: 2rem;
 }
 
 .progressCont {
   display: flex;
-  margin-bottom: 150px    ;
-  margin-top: 150px;
+  margin-bottom: 15%;
+  margin-top: 5%;
 
 }
 
 .progressImage img {
-  height: 400px;
+  width: 100%;
+  height: 100%;
 }
 
 .progressText p {
   color: #94A1B2;
   padding: 25px;
+  overflow: auto;
+  text-overflow: ellipsis;
+  height: 130px;
 }
 
 .progressText {
@@ -210,11 +235,19 @@ ul {
   margin-left: 25px;
 }
 
+.progressText h1 {
+  font-size: 1.5rem;
+}
+
 .companiesCont, .wholePage {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.companiesCont {
+  /* max-width: 340px; */
 }
 
 .container {
@@ -230,10 +263,11 @@ ul {
 .jobBox {
   /* border: 2px solid black; */
   border-radius: 5px;
-  margin-right: 100px;
+  margin-right: 3%;
   text-align: center;
   padding: 35px;
   transition: box-shadow .30s ease-in-out;
+  height: 50%;
 }
 
 .jobBox:hover {
@@ -245,6 +279,9 @@ ul {
   margin-top: 15px; 
   border-top: 2px solid #6e7885;
   padding-top: 40px;
+  overflow: auto;
+  text-overflow: ellipsis;
+  height: 250px;
 }
 
 .jobBox:last-child {
@@ -290,3 +327,40 @@ footer {
   padding: 2px;
   border-radius: 0px .25rem .25rem 0px;
 }
+
+
+
+/* Media Queries */
+
+@media (min-width: 1200px){
+  .jobBox p {
+    overflow: auto;
+    text-overflow: ellipsis;
+  }
+}
+
+/* @media (min-width: 992px) {
+  .mainNav li {
+    font-size: 1rem;
+}
+} */
+
+@media (min-width: 768px) {
+  .text h2 {
+    font-size: 2rem;
+  }
+  .progressText h1 {
+    font-size: 2rem;
+  }
+  .mainNav li {
+    font-size: 1rem;
+  }
+  .logoWithText p {
+  font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  
+}
+      
